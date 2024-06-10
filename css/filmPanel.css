@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+/* Base CSS start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #141414;
+  color: #FFFFFF;
+  font-family: 'Electrolize', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100%;
+  background-color: #141414;
+}
+
+/* Navbar start */
+.navbar {
+  background-color: #1F1F1F;
+  height: 60px;
+  color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.3s;
+}
+
+.navbar-link {
+  margin-right: 15px;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbar-link:hover {
+  color: #E50914;
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 30px;
+  color: #E50914;
+  padding-left: 30px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  column-gap: 30px;
+  padding: 0;
+}
+
+.menu-list-item {
+  cursor: pointer;
+  transition: font-weight 0.3s;
+}
+
+.menu-list-item:hover, .menu-list-item.active {
+  font-weight: bold;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.profile-text-container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  line-height: 1;
+}
+
+.toggle {
+  width: 40px;
+  background-color: #FFFFFF;
+  position: relative;
+  height: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  color: #FFD700;
+}
+
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: #000000;
+  border-radius: 50px;
+  position: absolute;
+  right: 1px;
+  transition: transform 0.3s;
+}
+
+body.active .toggle-ball {
+  transform: translateX(-20px);
+  background-color: #FFFFFF;
+}
+
+/* Sidebar start */
+.sidebar {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  row-gap: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar i {
+  color: #FFFFFF;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar i:hover {
+  color: #E50914;
+}
+
+/* Content start */
+.container-movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+  background-color: #1F1F1F;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.movie-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movie-header h1 {
+  color: #E50914;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.movie-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.movie-details {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.db-movie-info {
+  width: 45%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #1F1F1F;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.db-movie-info a {
+  color: #FFFFFF;
+}
+
+.db-movie-info strong {
+  color: #E50914;
+  font-style: italic;
+  font-size: 20px;
+}
+
+iframe {
+  width: 50%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+  .container-movie {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+/* Movie List styles */
+.movie-list-container {
+  margin-left: 70px;
+  padding: 20px;
+  position: relative; /* Kaydırma butonlarının konumlandırılması için relative konumlandırma */
+}
+
+.category-section {
+  margin-bottom: 20px;
+  position: relative; /* Kaydırma butonlarının konumlandırılması için relative konumlandırma */
+}
+
+.category-title {
+  font-size: 24px;
+  color: #E50914;
+  margin-bottom: 10px;
+}
+
+.movie-list-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  column-gap: 10px;
+  transition: transform 0.5s ease;
+}
+
+.movie-item {
+  position: relative;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.movie-item:hover {
+  transform: scale(1.05);
+}
+
+.movie-item-img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s;
+}
+
+.movie-item:hover .movie-item-img {
+  opacity: 0.7;
+}
+
+.movie-item-title, .movie-item-buttons {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.movie-item:hover .movie-item-title, .movie-item:hover .movie-item-buttons {
+  opacity: 1;
+}
+
+.movie-item-title {
+  bottom: 30%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+.movie-item-buttons {
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 10%;
+  text-align: center;
+}
+
+.movie-item-buttons i {
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 20px;
+  transition: opacity 0.3s;
+}
+
+.movie-item-buttons i:hover {
+  opacity: 1;
+}
+
+.arrow {
+  display: none; /* Varsayılan olarak okları gizle */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  color: #141414;
+  font-size: 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-left {
+  left: 0px; /* Butonun film afişinin dışına taşmasını sağlamak için negatif değer */
+}
+
+.arrow-right {
+  right: 0px; /* Butonun film afişinin dışına taşmasını sağlamak için negatif değer */
+}
+
+.movie-list-wrapper:hover .arrow {
+  display: flex; /* Kategorinin üzerine gelince okları göster */
+}
+
+/* Dark mode styles */
+body.active {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.container.active {
+  background-color: white;
+}
+
+.navbar.active, .sidebar.active {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.category-title.active, .db-movie-details.active, .sidebar i.active, .movie-list-title.active {
+  color: #000000;
+}
+
+.movie-list-filter select.active {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Eklenen dark mode kuralları */
+.menu-list-item, .menu-list-item a {
+  color: white;
+}
+
+.menu-list-item.active, .menu-list-item.active a {
+  color: black;
+}
+
+.toggle.active {
+  background-color: black;
+}
+
+.toggle-ball.active {
+  background-color: white;
+  transform: translateX(-20px);
+}
+
+.db-movie-info.active {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.db-movie-info a.active {
+  color: #000000;
+}
+
+.db-movie-info strong.active {
+  color: #000000;
+}
+
+.movie-item-title.active {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000000;
+}
+
+.movie-item-buttons i.active {
+  color: #000000;
+}
+
+.navbar-link.active {
+  color: black;
+}

@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: 'Electrolize', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.film-detail {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.film-detail h1 {
+    color: #ff0000;
+}
+
+.film-detail img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.film-detail p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.comments {
+    margin-top: 30px;
+}
+
+.comments .comment {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comments .comment p {
+    margin: 0;
+}
+
+.comments .comment p strong {
+    color: #ff0000;
+}
+
+.comments .comment p small {
+    color: #bbb;
+    font-size: 12px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.comment-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.comment-form textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Navbar, Sidebar ve Dark Mode CSS */
+.navbar {
+    background-color: #1F1F1F;
+    height: 60px;
+    color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.3s;
+}
+
+.navbar-link {
+    margin-right: 15px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbar-link:hover {
+    color: #E50914;
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 30px;
+    color: #E50914;
+    padding-left: 30px;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+    padding: 0;
+}
+
+.menu-list-item {
+    cursor: pointer;
+    transition: font-weight 0.3s;
+}
+
+.menu-list-item:hover, .menu-list-item.active {
+    font-weight: bold;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.profile-text-container {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    line-height: 1;
+}
+
+.toggle {
+    width: 40px;
+    background-color: #FFFFFF;
+    position: relative;
+    height: 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.toggle-icon {
+    color: #FFD700;
+}
+
+.toggle-ball {
+    width: 18px;
+    height: 18px;
+    background-color: #000000;
+    border-radius: 50px;
+    position: absolute;
+    right: 1px;
+    transition: transform 0.3s;
+}
+
+body.active .toggle-ball {
+    transform: translateX(-20px);
+    background-color: #FFFFFF;
+}
+
+.sidebar {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    row-gap: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar i {
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.sidebar i:hover {
+    color: #E50914;
+}
+
+.like-button, .dislike-button, .delete-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.like-button:hover, .dislike-button:hover, .delete-button:hover {
+    color: #E50914;
+}
+
+.like-button:focus, .dislike-button:focus, .delete-button:focus {
+    outline: none;
+}
+

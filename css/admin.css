@@ -1,0 +1,162 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.login-container, .admin-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+.admin-panel {
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    box-sizing: border-box;
+}
+
+.admin-panel h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ff4747; /* Başlık rengini belirgin hale getirdik */
+    text-align: center;
+}
+
+.admin-panel form {
+    display: grid;
+    grid-gap: 5px;
+    padding: 20px;
+}
+
+.admin-panel label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.admin-panel input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.admin-panel select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.admin-panel textarea {
+    width: 100%;
+    max-width: 1400px;
+    min-width: 1000px;
+    min-height: 30px;
+    max-height: 120px;
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.filmbutton {
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.filmbutton:hover {
+    background-color: #e03d3d;
+}
+
+.login-form, .add-film, .view-users {
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #ff4747; /* Başlık rengini belirgin hale getirdik */
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+input[type="text"], input[type="password"], input[type="url"], input[type="date"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #ffffff;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="url"]:focus, input[type="date"]:focus, input[type="number"]:focus, textarea:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, 0.25);
+}
+
+.button1 {
+    padding-left: 10px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #ff4747;
+}
+
+#error {
+    text-align: center;
+    margin-top: 10px;
+    color: #ff4747;
+}
+
+.admin-container {
+    display: none;
+    margin-top: 20px;
+    width: auto;
+}
+
+.add-film, .view-users {
+    padding: 15px;
+    border: none;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.add-film h2, .view-users h2 {
+    color: #ff4747; /* Başlık rengini belirgin hale getirdik */
+    border-bottom: 3px solid #ff4747;
+}

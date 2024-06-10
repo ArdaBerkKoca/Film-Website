@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    background: url("../img/red-seat-cinema-theatre.jpg") no-repeat center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.register-container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    color: #ffffff;
+}
+
+.register-form h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 1.75rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: white;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    color: white;
+    background-color: #333;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus, 
+input[type="tel"]:focus {
+    background-color: #fff;
+    color: black;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    width: 104%;
+    padding: 12px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #7F181B;
+    color: #fff;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.signup {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup a {
+    text-decoration: none;
+    color: #e50914;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .register-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+.logo-a {
+    font-size: 38px;
+    color: red;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    text-decoration: none;
+}

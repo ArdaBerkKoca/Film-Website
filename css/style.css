@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+/* Base CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  font-family: "Electrolize", sans-serif;
+  color: #FFFFFF;
+}
+
+.container {
+  background-color: #141414;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1F1F1F;
+  height: 60px;
+  color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.3s;
+}
+
+.navbar-link {
+  margin-right: 15px;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbar-link:hover {
+  color: #E50914;
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 30px;
+  color: #E50914;
+  padding-left: 30px;
+}
+
+.movie-list-title {
+  color: red;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  column-gap: 30px;
+  padding: 0;
+}
+
+.menu-list-item {
+  cursor: pointer;
+  transition: font-weight 0.3s;
+}
+
+.menu-list-item:hover, .menu-list-item.active {
+  font-weight: bold;
+}
+
+.menu-list-item.active a {
+  color: black;
+}
+
+/* Profile and toggle */
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.profile-text-container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  line-height: 1;
+}
+
+.toggle {
+  width: 40px;
+  background-color: #FFFFFF;
+  position: relative;
+  height: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  color: #FFD700;
+}
+
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: #000000;
+  border-radius: 50px;
+  position: absolute;
+  right: 1px;
+  transition: transform 0.3s;
+}
+
+body.active .toggle-ball {
+  transform: translateX(-20px);
+  background-color: #FFFFFF;
+}
+
+body.active {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  row-gap: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar i {
+  color: #FFFFFF;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar i:hover {
+  color: #E50914;
+}
+
+/* Content */
+.content-wrapper {
+  margin-left: 60px;
+  padding: 20px;
+}
+
+.featured-content {
+  background: url("../img/anasayfa.jpg");
+  padding: 50px;
+  height: calc(100vh - 150px);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.featured-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  max-width: 40%;
+}
+
+.featured-desc {
+  width: 500px;
+  background-color: rgba(229, 9, 20, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.featured-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.featured-buttons button {
+  padding: 10px 25px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #E50914;
+  color: #FFFFFF;
+  transition: background-color 0.3s;
+}
+
+.featured-buttons button:hover {
+  background-color: #C40812;
+}
+
+/* Movie List */
+.movie-list-container {
+  color: white;
+  margin-left: 70px;
+  position: relative;
+}
+
+.movie-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 10px;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.movie-item {
+  position: relative;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.movie-item:hover {
+  transform: scale(1.05);
+}
+
+.movie-item-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+
+.movie-item:hover .movie-item-img {
+  opacity: 0.7;
+}
+
+.movie-info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 0 0 5px 5px;
+}
+
+.movie-item:hover .movie-info {
+  opacity: 1;
+}
+
+.movie-item-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.movie-item-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.movie-item-buttons i {
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.movie-item-buttons i:hover {
+  opacity: 1;
+}
+
+.arrow {
+  display: none; /* Varsayılan olarak okları gizle */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  color: #141414;
+  font-size: 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-left {
+  left: 0px; /* Butonun film afişinin dışına taşmasını sağlamak için negatif değer */
+}
+
+.arrow-right {
+  right: 15px; /* Butonun film afişinin dışına taşmasını sağlamak için negatif değer */
+}
+
+.movie-list-container:hover .arrow {
+  display: flex; /* Kategorinin üzerine gelince okları göster */
+}
+
+.movie-list-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark mode */
+.container.active {
+  background-color: white;
+}
+
+.navbar.active {
+  background-color: white;
+  color: black;
+}
+
+.menu-list-item, .menu-list-item a {
+  color: white;
+}
+
+.menu-list-item.active, .menu-list-item.active a {
+  color: black;
+}
+
+.sidebar.active {
+  background-color: white;
+}
+
+.sidebar i.active {
+  color: black;
+}
+
+.movie-list-title.active {
+  color: black;
+}
+
+.navbar-link.active {
+  color: black;
+}
+
+#loginLink.active {
+  color: black;
+}
+
+#loginLink:hover.active {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+#registerLink.active {
+  color: black;
+}
+
+#registerLink:hover.active {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.toggle.active {
+  background-color: black;
+}
+
+.toggle-ball.active {
+  background-color: white;
+  transform: translateX(-20px);
+}
+
+.movie-list-filter select.active {
+  background-color: white;
+  color: black;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 800px) {
+  .menu-container {
+    display: none;
+  }
+  .featured-content {
+    height: 50vh;
+  }
+
+  .featured-title {
+    width: 200px;
+    font-size: 24px;
+  }
+
+  .featured-desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    max-width: 200px;
+    padding: 0;
+  }
+
+  .featured-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

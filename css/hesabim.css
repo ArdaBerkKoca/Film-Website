@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #121212; /* Dark background */
+    color: #FFFFFF; /* White text color */
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #1E1E1E; /* Darker container */
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* More prominent shadow */
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+h1 {
+    color: #E50914; /* Netflix-like red color */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.profile-info {
+    margin-bottom: 20px;
+}
+
+.profile-info label {
+    font-weight: bold;
+    margin-right: 10px;
+    display: inline-block;
+    width: 150px;
+    color: #E50914; /* Matching the header color */
+}
+
+.profile-info p {
+    display: inline-block;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #E50914;
+    margin-top: 30px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6f61; /* Lighter red for hover */
+}
+
+button {
+    background-color: #E50914; /* Netflix-like red color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6f61; /* Lighter red for hover */
+}

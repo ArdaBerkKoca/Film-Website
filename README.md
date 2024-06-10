@@ -30,33 +30,34 @@ In this project, I developed a film website using HTML, CSS, JavaScript, and PHP
 
 ## Screenshots
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/185e335a-e6bb-449e-acc7-f0e29f50151a)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/918759e8-434c-4138-a115-45c4a9b5ac63)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/97eac0cc-704d-42f3-8400-134e128a11f8)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/e991a8cc-3181-462a-94d3-87cb99380ea1)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/2f82c975-9499-4de4-b76c-1d708e495f35)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/a01842b5-cd7b-43aa-8eac-7b1381c82095)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/e29a2e22-dabb-463e-b003-8a40f23f3cf4)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/4a59343c-a265-4dd2-a279-19bdfad8bf97)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/45b17623-ad03-4331-b0fe-858928f0d202)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/384ef54a-892d-4b11-96b6-3f20c04eeadf)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/ec03d593-bdf5-4ca1-8101-c79ff9042de4)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/bdca75fa-6895-4c28-be54-cc1fa63b31f5)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/5db0687c-e961-424c-8efa-872327decaaf)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/899ab8e6-3423-45e9-a595-b2e473c48c5a)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/a4d530dd-619d-47ef-9c83-931cce0b03c9)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/1b67b519-018f-4693-9844-fe339ab823c8)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/9cd082cf-94b2-48fb-a9c8-054cd23c7b1f)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/aa25e914-8f2f-4f3a-8692-c9e89e4d3405)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/10d69855-111c-440d-a6a8-ed1288f4cb01)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/b714a6b3-303c-4ac2-943d-713c55a84c03)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/f1d11988-fd11-4352-b5a7-9a9ca5813d10)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/333fe90d-7ced-4d01-a1b2-60160ac8f38a)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/1841a7f2-6bf5-442d-9a71-756cb4b50573)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/c12aa534-8529-4893-a873-743138d4fc08)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/c7220440-fec9-429b-a2f5-81d0f6262dab)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/fe317f1e-4aba-48f1-a4b1-fe4fed486291)
 
-![image](https://github.com/ArdaBerkKoca/Film-Web-Sitesi/assets/169831603/8be992de-9cbf-4bbe-ab13-c8060206717b)
+![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/8bc9b682-189c-45c2-9f92-b234f2b34261)
+
 
 ## Contributors
 

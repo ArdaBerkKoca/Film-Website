@@ -39,7 +39,6 @@ In this project, I developed a film website using HTML, CSS, JavaScript, and PHP
 
 ![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/2d5e992a-8489-4c03-aa8f-785638ac22d1)
 
-
 ![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/918759e8-434c-4138-a115-45c4a9b5ac63)
 
 ![image](https://github.com/ArdaBerkKoca/Film-Website/assets/169831603/e991a8cc-3181-462a-94d3-87cb99380ea1)

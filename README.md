@@ -23,10 +23,13 @@ In this project, I developed a film website using HTML, CSS, JavaScript, and PHP
 
 ## Installation
 
-1. Clone this repository: ```git clone https://github.com/ArdaBerkKoca/Film-Web-Sitesi```
-2. Import the ```database.sql``` file into your MySQL database.
-3. Update the ```config.php``` file with your database information.
-4. Run the project on your local server.
+1. Clone this repository:
+   ```
+   git clone https://github.com/ArdaBerkKoca/Film-Web-Sitesi
+   ```
+3. Import the ```database.sql``` file into your MySQL database.
+7. Update the ```config.php``` file with your database information.
+8. Run the project on your local server.
 
 ## Screenshots
 
